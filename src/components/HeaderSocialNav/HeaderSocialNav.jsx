@@ -98,7 +98,7 @@ const HeaderSocialNav = () => {
         </SIconNavItem>
       </SIconNavList>
       <SThemeContainer>
-        <label class="switch js-themes">
+        <label className="switch js-themes">
           <input type="checkbox" name="switcher_checkbox" />
           <span></span>
         </label>

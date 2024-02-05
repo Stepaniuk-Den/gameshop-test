@@ -24,7 +24,7 @@ const HeaderMenu = () => {
           onClick={handleToggleMenu}
           text={
             <svg width={32} height={32}>
-              {isShowMenu ? (
+              {!isShowMenu ? (
                 <use href={Icons + "#burger-menu"} />
               ) : (
                 <use href={Icons + "#cross"} />
@@ -45,7 +45,7 @@ const HeaderMenu = () => {
             <use href={Icons + "#furfur"} />
           </svg>
         </SLabel>
-        <HeaderMenuList />
+        {isShowMenu && <HeaderMenuList />}
       </SHeaderInputWrapper>
     </>
   );
