@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SBannerItemDetailsContainer = styled.section`
   display: flex;
   flex-direction: column;
+  padding: 20px 0 130px;
 
   & h2 {
     margin-bottom: 20px;
@@ -17,6 +18,15 @@ export const SBannerItemDetailsContainer = styled.section`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+    padding-top: 30px;
+    & h2 {
+      text-align: start;
+      font-size: 42px;
+      line-height: 129%;
+    }
+  }
 `;
 
 export const SpRoute = styled.p`
@@ -27,6 +37,10 @@ export const SpRoute = styled.p`
   text-align: center;
   & span {
     font-weight: 700;
+  }
+
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+    text-align: start;
   }
 `;
 
@@ -50,7 +64,7 @@ export const SpArticles = styled.p`
   &:after {
     display: block;
     position: absolute;
-    bottom: -9px;
+    bottom: -17px;
     left: 0;
     content: "";
     width: 43px;
@@ -66,4 +80,11 @@ export const SBannerCardList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px;
+    row-gap: 20px;
+  }
 `;

@@ -7,6 +7,10 @@ export const SBannerContainer = styled.main`
   display: flex;
   flex-direction: column;
   padding: 0 15px;
+
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+    padding: 0 20px;
+  }
 `;
 export const SBannerWrapper = styled.div`
   position: relative;
@@ -37,7 +41,7 @@ export const SBannerWrapper = styled.div`
     z-index: 1;
   }
 
-  @media screen and (min-width: 767.9px) and (max-width: 1239.9px) {
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
     background-image: url(${BannerBackgroundMedium});
     width: 720px;
     height: 180px;
@@ -79,7 +83,7 @@ export const SAvatarThumb = styled.div`
   overflow: hidden;
   z-index: 1;
 
-  @media screen and (min-width: 767.9px) and (max-width: 1239.9px) {
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
     width: 120px;
     height: 120px;
   }

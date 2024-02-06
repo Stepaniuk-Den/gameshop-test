@@ -7,7 +7,7 @@ export const SPlatformList = styled.ul`
   align-items: center;
   margin: 40px auto 57px;
 
-  @media screen and (min-width: 767.9px) and (max-width: 1239.9px) {
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
     flex-direction: row;
     margin: 98px auto 30px;
     gap: 40px;

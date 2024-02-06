@@ -5,6 +5,10 @@ export const SFooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+    padding: 28px 20px;
+  }
 `;
 
 export const SFooterWrapper = styled.div`
@@ -18,6 +22,12 @@ export const SFooterWrapper = styled.div`
   border-radius: 40px;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
   background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
+
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+    width: 728px;
+    height: 640px;
+    padding: 30px 22px 40px;
+  }
 `;
 
 export const SFooterSocialCard = styled.div`
@@ -39,6 +49,20 @@ export const SFooterSocialCard = styled.div`
     color: #0dd0ba;
     margin-bottom: 12px;
   }
+
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+    /* display: flex;
+    flex-direction: column; */
+    width: 668px;
+    height: 309px;
+    padding: 0;
+    align-items: center;
+
+    & p {
+      width: 525px;
+      text-align: center;
+    }
+  }
 `;
 
 export const SFooterLogo = styled.span`
@@ -49,6 +73,10 @@ export const SFooterLogo = styled.span`
   letter-spacing: 0.02em;
   text-align: center;
   color: #000;
+
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+    margin: 58px auto 54px;
+  }
 `;
 
 export const SFooterNavList = styled.ul`

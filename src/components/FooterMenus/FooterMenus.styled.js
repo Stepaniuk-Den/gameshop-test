@@ -34,15 +34,29 @@ export const SFooterMenusContainer = styled.div`
     letter-spacing: 0.03em;
     color: #fff;
   }
+
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+  }
 `;
 
+export const SFooterMenusWrapper = styled.div`
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 668px;
+  }
+`;
 export const SFooterMenuCategory = styled.div`
+  width: 190px;
   margin-bottom: 48px;
 `;
 export const SFooterMenuPlay = styled.div`
+  width: 190px;
   margin-bottom: 21px;
 `;
 export const SFooterMenuLink = styled.div`
+  width: 190px;
   margin-bottom: 37px;
 
   & h4 {

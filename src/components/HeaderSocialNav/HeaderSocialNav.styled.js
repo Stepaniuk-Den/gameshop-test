@@ -8,7 +8,7 @@ export const SHeaderNavWrapper = styled.div`
 
   background: linear-gradient(to right, #0dd0ba, #2a86e5);
 
-  @media screen and (min-width: 767.9px) and (max-width: 1239.9px) {
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
     padding-left: 24px;
     justify-content: flex-start;
   }
@@ -19,7 +19,7 @@ export const SIconNavList = styled.ul`
   flex-direction: row;
   gap: 5px;
 
-  @media screen and (min-width: 767.9px) and (max-width: 1239.9px) {
+  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
     margin-left: auto;
   }
 `;
