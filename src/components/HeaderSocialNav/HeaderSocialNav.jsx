@@ -1,13 +1,17 @@
 import React from "react";
 import {
+  SHeaderItem,
+  SHeaderList,
   SHeaderNavWrapper,
   SIconNavItem,
   SIconNavList,
   SThemeContainer,
 } from "./HeaderSocialNav.styled";
 import Icons from "../../assets/icons/icons.svg";
+import { useMediaQuery } from "react-responsive";
 
 const HeaderSocialNav = () => {
+  const isLaptop = useMediaQuery({ minWidth: 768 });
   // const themeToggle = document.querySelector("input[name = switcher_checkbox]");
 
   // if (localStorage.getItem("theme") === "dark") {
@@ -29,6 +33,34 @@ const HeaderSocialNav = () => {
 
   return (
     <SHeaderNavWrapper>
+      {isLaptop && (
+        <SHeaderList>
+          <SHeaderItem>
+            <span>
+              <svg width={16} height={14}>
+                <use href={Icons + "#palm"} />
+              </svg>
+            </span>
+            Menu item 1
+          </SHeaderItem>
+          <SHeaderItem>
+            <span>
+              <svg width={16} height={14}>
+                <use href={Icons + "#other"} />
+              </svg>
+            </span>
+            Menu item 2
+          </SHeaderItem>
+          <SHeaderItem>
+            <span>
+              <svg width={16} height={14}>
+                <use href={Icons + "#android"} />
+              </svg>
+            </span>
+            Menu item 3
+          </SHeaderItem>
+        </SHeaderList>
+      )}
       <SIconNavList>
         <SIconNavItem>
           <a

@@ -47,11 +47,11 @@ const Banner = () => {
         </SBannerMore>
         {isShowMenu && (
           <SBannerMoreList>
-            <SBannerMoreItem>{itemName}</SBannerMoreItem>
-            <SBannerMoreItem>Item</SBannerMoreItem>
-            <SBannerMoreItem>Item</SBannerMoreItem>
-            <SBannerMoreItem>Item</SBannerMoreItem>
-            <SBannerMoreItem>Item</SBannerMoreItem>
+            <SBannerMoreItem className="active">{itemName}</SBannerMoreItem>
+            <SBannerMoreItem id="2">Item</SBannerMoreItem>
+            <SBannerMoreItem id="3">Item</SBannerMoreItem>
+            <SBannerMoreItem id="4">Item</SBannerMoreItem>
+            <SBannerMoreItem id="5">Item</SBannerMoreItem>
           </SBannerMoreList>
         )}
       </SBannerMoreContainer>

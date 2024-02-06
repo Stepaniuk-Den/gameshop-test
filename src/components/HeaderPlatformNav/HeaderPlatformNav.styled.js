@@ -6,6 +6,12 @@ export const SPlatformList = styled.ul`
   justify-content: center;
   align-items: center;
   margin: 40px auto 57px;
+
+  @media screen and (min-width: 767.9px) and (max-width: 1239.9px) {
+    flex-direction: row;
+    margin: 98px auto 30px;
+    gap: 40px;
+  }
 `;
 
 export const SPlatformItem = styled.li`
@@ -22,8 +28,5 @@ export const SPlatformItem = styled.li`
     display: flex;
     justify-content: center;
     padding-right: 4px;
-  }
-
-  & svg {
   }
 `;

@@ -37,9 +37,22 @@ export const SBannerWrapper = styled.div`
     z-index: 1;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 767.9px) and (max-width: 1239.9px) {
     background-image: url(${BannerBackgroundMedium});
+    width: 720px;
+    height: 180px;
+    padding: 30px;
+    border-radius: 40px;
+
+    & p {
+      width: 518px;
+      height: 42px;
+      margin-left: 22px;
+      font-size: 35px;
+      letter-spacing: 0.01em;
+    }
   }
+
   @media (min-width: 1240px) {
     background-image: url(${BannerBackgroundHight});
   }
@@ -65,6 +78,11 @@ export const SAvatarThumb = styled.div`
   object-fit: contain;
   overflow: hidden;
   z-index: 1;
+
+  @media screen and (min-width: 767.9px) and (max-width: 1239.9px) {
+    width: 120px;
+    height: 120px;
+  }
 `;
 
 export const SBannerMoreContainer = styled.div`
@@ -96,6 +114,7 @@ export const SBannerMoreItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 42px;
 
   font-weight: 700;
   font-size: 20px;
@@ -108,12 +127,11 @@ export const SBannerMoreItem = styled.li`
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 
-  /* &:active {
-    outline: 1px solid red;
+  &.active {
     &:after {
       display: block;
       position: absolute;
-      bottom: -4px;
+      bottom: -2px;
       right: 50%;
       transform: translateX(50%);
       content: "";
@@ -124,5 +142,5 @@ export const SBannerMoreItem = styled.li`
 
       background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
     }
-  } */
+  }
 `;
