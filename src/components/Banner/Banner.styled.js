@@ -3,7 +3,7 @@ import BannerBackgroundLow from "../../assets/images/banner_background_low.png";
 import BannerBackgroundMedium from "../../assets/images/banner_background_medium.png";
 import BannerBackgroundHight from "../../assets/images/banner_background_hight.png";
 
-export const SBannerContainer = styled.div`
+export const SBannerContainer = styled.main`
   display: flex;
   flex-direction: column;
   padding: 0 15px;
@@ -107,21 +107,6 @@ export const SBannerMoreItem = styled.li`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-
-  /* &:after {
-    display: block;
-    position: absolute;
-    bottom: -4px;
-    right: 50%;
-    transform: translateX(50%);
-    content: "";
-    width: 23px;
-    height: 5px;
-
-    border-radius: 40px;
-
-    background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
-  } */
 
   /* &:active {
     outline: 1px solid red;

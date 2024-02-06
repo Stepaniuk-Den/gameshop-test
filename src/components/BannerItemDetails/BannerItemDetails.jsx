@@ -2,6 +2,7 @@ import React from "react";
 import {
   SBannerCardList,
   SBannerItemDetailsContainer,
+  SpArticles,
   SpDetails,
   SpRoute,
 } from "./BannerItemDetails.styled";
@@ -25,6 +26,7 @@ const BannerItemDetails = ({ itemName }) => {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </SpDetails>
+      <SpArticles>Similar articles</SpArticles>
       <SBannerCardList>
         {/* якщо якісь дані з бека то можна буде мапнути */}
         <GameCard itemName={itemName} />
