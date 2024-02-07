@@ -6,14 +6,21 @@ import {
   SCardWrapper,
 } from "./GameCard.styled";
 import PhotoCardLow from "../../assets/images/PhotoCard_low.png";
+import PhotoCardHight from "../../assets/images/PhotoCard_hight.png";
 import Icons from "../../assets/icons/icons.svg";
+import { useMediaQuery } from "react-responsive";
 
 const GameCard = ({ itemName }) => {
+  const isDesktop = useMediaQuery({ minWidth: 1170 });
   return (
     <SCardContainer>
       <SCardWrapper>
         <SCardThumb>
-          <img src={PhotoCardLow} alt="card" />
+          {isDesktop ? (
+            <img src={PhotoCardHight} alt="card" />
+          ) : (
+            <img src={PhotoCardLow} alt="card" />
+          )}
         </SCardThumb>
         <h3>{itemName}</h3>
         <SCardDetails>

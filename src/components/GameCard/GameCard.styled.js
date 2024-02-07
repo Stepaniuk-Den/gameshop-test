@@ -23,6 +23,11 @@ export const SCardWrapper = styled.div`
     text-align: center;
     color: #2a86e5;
   }
+
+  @media screen and (min-width: 1170px) {
+    width: 387px;
+    height: 279px;
+  }
 `;
 
 export const SCardThumb = styled.div`
@@ -34,6 +39,10 @@ export const SCardThumb = styled.div`
 
   object-fit: contain;
   overflow: hidden;
+
+  @media screen and (min-width: 1170px) {
+    width: 347px;
+  }
 `;
 
 export const SCardDetails = styled.div`

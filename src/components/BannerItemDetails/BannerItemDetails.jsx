@@ -8,6 +8,7 @@ import {
   SpRoute,
 } from "./BannerItemDetails.styled";
 import GameCard from "../GameCard/GameCard";
+import Ads from "../Ads/Ads";
 
 const BannerItemDetails = ({ itemName }) => {
   return (
@@ -37,6 +38,7 @@ const BannerItemDetails = ({ itemName }) => {
           <GameCard itemName={itemName} />
         </SBannerCardList>
       </SBannerItemDetailsWrapper>
+      <Ads />
     </SBannerItemDetailsContainer>
   );
 };

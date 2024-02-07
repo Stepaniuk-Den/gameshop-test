@@ -4,7 +4,9 @@ export const SBannerItemDetailsContainer = styled.section`
   display: flex;
   @media screen and (min-width: 1170px) {
     width: 1170px;
-    margin-top: 46px;
+    margin: 46px auto 0;
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 export const SBannerItemDetailsWrapper = styled.div`
@@ -38,7 +40,7 @@ export const SBannerItemDetailsWrapper = styled.div`
 
   @media screen and (min-width: 1170px) {
     width: 810px;
-    padding-top: 0;
+    padding: 0 0 130px 20px;
   }
 `;
 
@@ -50,10 +52,6 @@ export const SpRoute = styled.p`
   text-align: center;
   & span {
     font-weight: 700;
-  }
-
-  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
-    text-align: start;
   }
 `;
 
@@ -94,10 +92,15 @@ export const SBannerCardList = styled.ul`
   flex-direction: column;
   gap: 20px;
 
-  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+  @media screen and (min-width: 767.9px) {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 28px;
+    row-gap: 20px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    gap: 16px;
     row-gap: 20px;
   }
 `;
