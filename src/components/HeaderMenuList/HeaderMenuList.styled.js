@@ -11,4 +11,11 @@ export const SMenuList = styled.ul`
     line-height: 1.4;
     color: #2a86e5;
   }
+
+  @media screen and (min-width: 1170px) {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    gap: 28px;
+  }
 `;

@@ -1,16 +1,28 @@
 import styled from "styled-components";
 
+export const SHeaderNavContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to right, #0dd0ba, #2a86e5);
+`;
 export const SHeaderNavWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 380px;
   padding: 10px 14px 11px 17px;
 
-  background: linear-gradient(to right, #0dd0ba, #2a86e5);
-
   @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
-    padding-left: 24px;
     justify-content: flex-start;
+    width: 768px;
+    padding-left: 24px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    width: 1170px;
+    padding: 10px 0;
   }
 `;
 
@@ -19,7 +31,7 @@ export const SIconNavList = styled.ul`
   flex-direction: row;
   gap: 5px;
 
-  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
+  @media screen and (min-width: 767.9px) {
     margin-left: auto;
   }
 `;
@@ -50,6 +62,10 @@ export const SThemeContainer = styled.div`
 
   @media screen and (min-width: 767.9px) and (max-width: 1239.9px) {
     margin-left: 15px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    margin-left: 20px;
   }
 `;
 

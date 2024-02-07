@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   SHeaderInputWrapper,
+  SHeaderMenuContainer,
   SHeaderMenuWrapper,
   SInput,
   SLabel,
@@ -9,44 +10,50 @@ import {
 import Button from "../Button/Button";
 import Icons from "../../assets/icons/icons.svg";
 import HeaderMenuList from "../HeaderMenuList/HeaderMenuList";
+import { useMediaQuery } from "react-responsive";
 
 const HeaderMenu = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
+  const isDesktop = useMediaQuery({ minWidth: 1170 });
 
   const handleToggleMenu = () => {
     setIsShowMenu(!isShowMenu);
   };
   return (
     <>
-      <SHeaderMenuWrapper>
-        <SLogo>LOGOTYPE</SLogo>
-        <Button
-          onClick={handleToggleMenu}
-          text={
-            <svg width={32} height={32}>
-              {!isShowMenu ? (
-                <use href={Icons + "#burger-menu"} />
-              ) : (
-                <use href={Icons + "#cross"} />
-              )}
+      <SHeaderMenuContainer>
+        <SHeaderMenuWrapper>
+          <SLogo>LOGOTYPE</SLogo>
+          {!isDesktop && (
+            <Button
+              onClick={handleToggleMenu}
+              text={
+                <svg width={32} height={32}>
+                  {!isShowMenu ? (
+                    <use href={Icons + "#burger-menu"} />
+                  ) : (
+                    <use href={Icons + "#cross"} />
+                  )}
+                </svg>
+              }
+            />
+          )}
+        </SHeaderMenuWrapper>
+        <SHeaderInputWrapper>
+          <SLabel htmlFor="search">
+            <SInput
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search for..."
+            />
+            <svg width={20} height={20}>
+              <use href={Icons + "#furfur"} />
             </svg>
-          }
-        />
-      </SHeaderMenuWrapper>
-      <SHeaderInputWrapper>
-        <SLabel htmlFor="search">
-          <SInput
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search for..."
-          />
-          <svg width={20} height={20}>
-            <use href={Icons + "#furfur"} />
-          </svg>
-        </SLabel>
-        {isShowMenu && <HeaderMenuList />}
-      </SHeaderInputWrapper>
+          </SLabel>
+          {isShowMenu || isDesktop ? <HeaderMenuList /> : null}
+        </SHeaderInputWrapper>
+      </SHeaderMenuContainer>
     </>
   );
 };

@@ -2,8 +2,16 @@ import styled from "styled-components";
 
 export const SBannerItemDetailsContainer = styled.section`
   display: flex;
+  @media screen and (min-width: 1170px) {
+    width: 1170px;
+    margin-top: 46px;
+  }
+`;
+export const SBannerItemDetailsWrapper = styled.div`
+  display: flex;
   flex-direction: column;
-  padding: 20px 0 130px;
+  align-items: center;
+  padding: 20px 15px 130px;
 
   & h2 {
     margin-bottom: 20px;
@@ -19,13 +27,18 @@ export const SBannerItemDetailsContainer = styled.section`
     -webkit-text-fill-color: transparent;
   }
 
-  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
-    padding-top: 30px;
+  @media screen and (min-width: 767.9px) {
+    padding: 30px 20px 130px 20px;
+    align-items: flex-start;
     & h2 {
-      text-align: start;
       font-size: 42px;
       line-height: 129%;
     }
+  }
+
+  @media screen and (min-width: 1170px) {
+    width: 810px;
+    padding-top: 0;
   }
 `;
 
