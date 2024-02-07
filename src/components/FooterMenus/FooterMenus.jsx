@@ -11,11 +11,12 @@ import { useMediaQuery } from "react-responsive";
 
 const FooterMenus = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isDesktop = useMediaQuery({ minWidth: 1170 });
   return (
     <SFooterMenusContainer>
       <SFooterMenusWrapper>
         <SFooterMenuCategory>
-          <h4>{isMobile ? "Category" : "Guides and Tips"}</h4>
+          <h4>{isMobile || isDesktop ? "Category" : "Guides and Tips"}</h4>
           <ul>
             <li>Item 1</li>
             <li>Item 3</li>

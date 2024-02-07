@@ -4,6 +4,7 @@ import BannerBackgroundMedium from "../../assets/images/banner_background_medium
 import BannerBackgroundHight from "../../assets/images/banner_background_hight.png";
 
 export const SBannerContainer = styled.main`
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 0 15px;

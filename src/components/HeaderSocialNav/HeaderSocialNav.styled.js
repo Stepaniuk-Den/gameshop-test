@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const SHeaderNavContainer = styled.div`
   display: flex;
@@ -67,6 +67,25 @@ export const SThemeContainer = styled.div`
   @media screen and (min-width: 1170px) {
     margin-left: 20px;
   }
+`;
+
+export const SThemeSpan = styled.span`
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 3px;
+  right: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+
+  ${(props) =>
+    props.theme === "dark" &&
+    css`
+      left: 23px;
+    `};
 `;
 
 export const SHeaderList = styled.ul`

@@ -9,8 +9,10 @@ import {
 } from "./BannerItemDetails.styled";
 import GameCard from "../GameCard/GameCard";
 import Ads from "../Ads/Ads";
+import { useMediaQuery } from "react-responsive";
 
 const BannerItemDetails = ({ itemName }) => {
+  const isDesktop = useMediaQuery({ minWidth: 1170 });
   return (
     <SBannerItemDetailsContainer>
       <SBannerItemDetailsWrapper>
@@ -38,7 +40,7 @@ const BannerItemDetails = ({ itemName }) => {
           <GameCard itemName={itemName} />
         </SBannerCardList>
       </SBannerItemDetailsWrapper>
-      <Ads />
+      {isDesktop && <Ads />}
     </SBannerItemDetailsContainer>
   );
 };

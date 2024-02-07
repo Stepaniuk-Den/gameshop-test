@@ -4,16 +4,11 @@ import HeaderSocialNav from "../HeaderSocialNav/HeaderSocialNav";
 import HeaderPlatformNav from "../HeaderPlatformNav/HeaderPlatformNav";
 import { useMediaQuery } from "react-responsive";
 
-const Header = () => {
-  // const isLaptop = useMediaQuery({ minWidth: 768 });
+const Header = ({ toggleTheme, theme }) => {
   const isDesktop = useMediaQuery({ minWidth: 1170 });
-  // const isBigScreen = useMediaQuery({ minWidth: 1824 });
-  // const isMobile = useMediaQuery({ maxWidth: 767 });
-  // const isPortrait = useMediaQuery({ orientation: "portrait" });
-  // const isRetina = useMediaQuery({ minResolution: "2dppx" });
   return (
     <header>
-      <HeaderSocialNav />
+      <HeaderSocialNav toggleTheme={toggleTheme} theme={theme} />
       <HeaderMenu />
       {!isDesktop && <HeaderPlatformNav />}
     </header>

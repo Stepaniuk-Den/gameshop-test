@@ -7,31 +7,13 @@ import {
   SIconNavItem,
   SIconNavList,
   SThemeContainer,
+  SThemeSpan,
 } from "./HeaderSocialNav.styled";
 import Icons from "../../assets/icons/icons.svg";
 import { useMediaQuery } from "react-responsive";
 
-const HeaderSocialNav = () => {
+const HeaderSocialNav = ({ toggleTheme, theme }) => {
   const isLaptop = useMediaQuery({ minWidth: 768 });
-  // const themeToggle = document.querySelector("input[name = switcher_checkbox]");
-
-  // if (localStorage.getItem("theme") === "dark") {
-  //   document.body.classList.add("dark");
-  //   themeToggle.checked = true;
-  // }
-
-  // themeToggle.addEventListener("change", handlerThemeChange);
-
-  // function handlerThemeChange() {
-  //   if (themeToggle.checked) {
-  //     document.body.classList.add("dark");
-  //     localStorage.setItem("theme", "dark");
-  //     return;
-  //   }
-  //   document.body.classList.remove("dark");
-  //   localStorage.setItem("theme", "light");
-  // }
-
   return (
     <SHeaderNavContainer>
       <SHeaderNavWrapper>
@@ -132,10 +114,15 @@ const HeaderSocialNav = () => {
           </SIconNavItem>
         </SIconNavList>
         <SThemeContainer>
-          <label className="switch js-themes">
-            <input type="checkbox" name="switcher_checkbox" />
-            <span></span>
-          </label>
+          <SThemeSpan onClick={toggleTheme} theme={theme}>
+            <svg width={25} height={25}>
+              {theme === "light" ? (
+                <use href={Icons + "#sun"} />
+              ) : (
+                <use href={Icons + "#moon"} />
+              )}
+            </svg>
+          </SThemeSpan>
         </SThemeContainer>
       </SHeaderNavWrapper>
     </SHeaderNavContainer>

@@ -7,6 +7,15 @@ export const SFooterMenusContainer = styled.div`
   color: #fff;
   padding-top: 23px;
 
+  @media screen and (min-width: 1170px) {
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 70px;
+    padding: 0;
+  }
+`;
+
+export const SFooterMenusWrapper = styled.div`
   & h4 {
     font-weight: 700;
     font-size: 24px;
@@ -36,25 +45,39 @@ export const SFooterMenusContainer = styled.div`
   }
 
   @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
-  }
-`;
-
-export const SFooterMenusWrapper = styled.div`
-  @media screen and (min-width: 767.9px) and (max-width: 1169.9px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 668px;
   }
+
+  @media screen and (min-width: 1170px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 708px;
+    height: 300px;
+    padding-top: 54px;
+  }
 `;
+
 export const SFooterMenuCategory = styled.div`
   width: 190px;
   margin-bottom: 48px;
+
+  @media screen and (min-width: 1170px) {
+    margin-bottom: 0;
+  }
 `;
 export const SFooterMenuPlay = styled.div`
   width: 190px;
   margin-bottom: 21px;
+
+  @media screen and (min-width: 1170px) {
+    margin-bottom: 0;
+  }
 `;
+
 export const SFooterMenuLink = styled.div`
   width: 190px;
   margin-bottom: 37px;
@@ -65,6 +88,10 @@ export const SFooterMenuLink = styled.div`
 
   & ul {
     gap: 6px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    margin-bottom: 0;
   }
 `;
 

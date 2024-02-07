@@ -17,6 +17,7 @@ import Button from "../Button/Button";
 import Icons from "../../assets/icons/icons.svg";
 import BannerItemDetails from "../BannerItemDetails/BannerItemDetails";
 import { useMediaQuery } from "react-responsive";
+import BannerRating from "../BannerRating/BannerRating";
 
 const Banner = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
@@ -71,6 +72,7 @@ const Banner = () => {
   return (
     <>
       <SBannerContainer>
+        <BannerRating />
         <SBannerWrapper>
           <SBannerOverlay />
           <SAvatarThumb>
