@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/gameshop-test/static/css/main.f6d5fb27.css",
-    "main.js": "/gameshop-test/static/js/main.99d5dff0.js",
-    "static/media/banner_background_hight.png": "/gameshop-test/static/media/banner_background_hight.d1dd06db9792f58652ea.png",
-    "static/media/banner_background_medium.png": "/gameshop-test/static/media/banner_background_medium.ea903d333dae18254344.png",
-    "static/media/ads-image.png": "/gameshop-test/static/media/ads-image.3e30c28e3b1ed9271429.png",
-    "static/media/banner_background_low.png": "/gameshop-test/static/media/banner_background_low.48e3852da0de091c5d80.png",
-    "static/media/PhotoCard_hight.png": "/gameshop-test/static/media/PhotoCard_hight.a8c1df1fcfdf138bbcb0.png",
-    "static/media/PhotoCard_low.png": "/gameshop-test/static/media/PhotoCard_low.e501f9ec0603238d1abe.png",
+    "main.js": "/gameshop-test/static/js/main.ac1072d1.js",
+    "static/media/banner_background_hight.webp": "/gameshop-test/static/media/banner_background_hight.cb1ce81815d2f81c36b4.webp",
     "static/media/icons.svg": "/gameshop-test/static/media/icons.06f2d28f08d12a1b49cd2aa15fb284b3.svg",
-    "static/media/game_photo_1.png": "/gameshop-test/static/media/game_photo_1.8ece050cb4341a2a0506.png",
+    "static/media/ads-image.webp": "/gameshop-test/static/media/ads-image.9f55d0f34372f2434c7b.webp",
+    "static/media/banner_background_medium.webp": "/gameshop-test/static/media/banner_background_medium.175de5d4982747241cce.webp",
+    "static/media/banner_background_low.webp": "/gameshop-test/static/media/banner_background_low.c94080e6f141d6c05e97.webp",
+    "static/media/PhotoCard_hight.webp": "/gameshop-test/static/media/PhotoCard_hight.ecb58c06dcdc2326e6c9.webp",
+    "static/media/PhotoCard_low.webp": "/gameshop-test/static/media/PhotoCard_low.26e0cea04f918ac3617e.webp",
+    "static/media/banner_rating.webp": "/gameshop-test/static/media/banner_rating.41806b56fc7b8b62daa1.webp",
+    "static/media/game_photo_1.webp": "/gameshop-test/static/media/game_photo_1.b6b09c9c3489f73c0fd2.webp",
+    "static/media/banner_note.webp": "/gameshop-test/static/media/banner_note.1106b9a6efd42fe56d0e.webp",
     "index.html": "/gameshop-test/index.html",
     "main.f6d5fb27.css.map": "/gameshop-test/static/css/main.f6d5fb27.css.map",
-    "main.99d5dff0.js.map": "/gameshop-test/static/js/main.99d5dff0.js.map"
+    "main.ac1072d1.js.map": "/gameshop-test/static/js/main.ac1072d1.js.map"
   },
   "entrypoints": [
     "static/css/main.f6d5fb27.css",
-    "static/js/main.99d5dff0.js"
+    "static/js/main.ac1072d1.js"
   ]
 }
