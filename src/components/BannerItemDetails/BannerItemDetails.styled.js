@@ -70,7 +70,7 @@ export const SpArticles = styled.p`
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.03em;
-  color: #707070;
+  color: ${({ theme }) => theme.textPrimary};
 
   &:after {
     display: block;

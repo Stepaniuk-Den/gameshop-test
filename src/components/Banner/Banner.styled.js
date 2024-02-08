@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import BannerBackgroundLow from "../../assets/images/banner_background_low.png";
-import BannerBackgroundMedium from "../../assets/images/banner_background_medium.png";
-import BannerBackgroundHight from "../../assets/images/banner_background_hight.png";
+import BannerBackgroundLow from "../../assets/images/banner_background_low.webp";
+import BannerBackgroundMedium from "../../assets/images/banner_background_medium.webp";
+import BannerBackgroundHight from "../../assets/images/banner_background_hight.webp";
 
 export const SBannerContainer = styled.main`
   position: relative;

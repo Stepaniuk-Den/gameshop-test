@@ -5,8 +5,8 @@ import {
   SCardThumb,
   SCardWrapper,
 } from "./GameCard.styled";
-import PhotoCardLow from "../../assets/images/PhotoCard_low.png";
-import PhotoCardHight from "../../assets/images/PhotoCard_hight.png";
+import PhotoCardLow from "../../assets/images/PhotoCard_low.webp";
+import PhotoCardHight from "../../assets/images/PhotoCard_hight.webp";
 import Icons from "../../assets/icons/icons.svg";
 import { useMediaQuery } from "react-responsive";
 

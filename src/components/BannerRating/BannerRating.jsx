@@ -10,8 +10,8 @@ import {
   SRatingNoteThumb,
 } from "./BannerRating.styled";
 
-import Rating from "../../assets/images/banner_rating.png";
-import Note from "../../assets/images/banner_note.png";
+import Rating from "../../assets/images/banner_rating.webp";
+import Note from "../../assets/images/banner_note.webp";
 
 const BannerRating = () => {
   return (

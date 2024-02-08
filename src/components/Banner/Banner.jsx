@@ -12,7 +12,7 @@ import {
   SButtonList,
 } from "./Banner.styled";
 
-import GamePhoto1 from "../../assets/images/game_photo_1.png";
+import GamePhoto1 from "../../assets/images/game_photo_1.webp";
 import Button from "../Button/Button";
 import Icons from "../../assets/icons/icons.svg";
 import BannerItemDetails from "../BannerItemDetails/BannerItemDetails";
@@ -72,7 +72,7 @@ const Banner = () => {
   return (
     <>
       <SBannerContainer>
-        <BannerRating />
+        {isDesktop && <BannerRating />}
         <SBannerWrapper>
           <SBannerOverlay />
           <SAvatarThumb>

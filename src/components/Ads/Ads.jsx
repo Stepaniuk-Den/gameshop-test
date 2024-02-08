@@ -1,6 +1,6 @@
 import React from "react";
 import { SAdsContainer, SAdsDetails } from "./Ads.styled";
-import AdsImg from "../../assets/images/ads-image.png";
+import AdsImg from "../../assets/images/ads-image.webp";
 
 const Ads = () => {
   return (

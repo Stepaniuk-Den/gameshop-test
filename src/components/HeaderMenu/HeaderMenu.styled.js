@@ -38,7 +38,7 @@ export const SLogo = styled.span`
   font-weight: 500;
   line-height: 77%;
   letter-spacing: 0.02em;
-  color: #000;
+  color: ${({ theme }) => theme.textLogo};
 
   @media screen and (min-width: 1170px) {
     font-size: 400;

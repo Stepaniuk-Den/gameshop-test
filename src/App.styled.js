@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SContainer = styled.div`
   background-color: ${(props) => props.theme.background};
-  color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.textPrimary};
   display: flex;
   flex-direction: column;
   width: 380px;

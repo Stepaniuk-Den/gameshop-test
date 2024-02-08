@@ -14,6 +14,7 @@ import { useMediaQuery } from "react-responsive";
 
 const HeaderSocialNav = ({ toggleTheme, theme }) => {
   const isLaptop = useMediaQuery({ minWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 1170 });
   return (
     <SHeaderNavContainer>
       <SHeaderNavWrapper>
@@ -43,6 +44,16 @@ const HeaderSocialNav = ({ toggleTheme, theme }) => {
               </span>
               Menu item 3
             </SHeaderItem>
+            {isDesktop && (
+              <SHeaderItem>
+                <span>
+                  <svg width={16} height={14}>
+                    <use href={Icons + "#apple"} />
+                  </svg>
+                </span>
+                Menu item 4
+              </SHeaderItem>
+            )}
           </SHeaderList>
         )}
         <SIconNavList>
