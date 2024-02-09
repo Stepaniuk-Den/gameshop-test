@@ -76,7 +76,7 @@ const Banner = () => {
         <SBannerWrapper>
           <SBannerOverlay />
           <SAvatarThumb>
-            <img src={GamePhoto1} alt="game avatar 1" />
+            <img src={GamePhoto1} alt="game avatar 1" loading="lazy" />
           </SAvatarThumb>
           {isDesktop ? (
             <SButtonBlock>
@@ -107,7 +107,7 @@ const Banner = () => {
               <Button
                 onClick={handleToggleMenu}
                 text={
-                  <svg width={32} height={32}>
+                  <svg width={20} height={20}>
                     <use href={Icons + "#burger-more"} />
                   </svg>
                 }

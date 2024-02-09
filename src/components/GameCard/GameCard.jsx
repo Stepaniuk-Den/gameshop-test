@@ -17,9 +17,9 @@ const GameCard = ({ itemName }) => {
       <SCardWrapper>
         <SCardThumb>
           {isDesktop ? (
-            <img src={PhotoCardHight} alt="card" />
+            <img src={PhotoCardHight} alt="card" loading="lazy" />
           ) : (
-            <img src={PhotoCardLow} alt="card" />
+            <img src={PhotoCardLow} alt="card" loading="lazy" />
           )}
         </SCardThumb>
         <h3>{itemName}</h3>

@@ -11,6 +11,7 @@ import Button from "../Button/Button";
 import Icons from "../../assets/icons/icons.svg";
 import HeaderMenuList from "../HeaderMenuList/HeaderMenuList";
 import { useMediaQuery } from "react-responsive";
+import HeaderPlatformNav from "../HeaderPlatformNav/HeaderPlatformNav";
 
 const HeaderMenu = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
@@ -53,6 +54,7 @@ const HeaderMenu = () => {
           </SLabel>
           {isShowMenu || isDesktop ? <HeaderMenuList /> : null}
         </SHeaderInputWrapper>
+        {isShowMenu && !isDesktop ? <HeaderPlatformNav /> : null}
       </SHeaderMenuContainer>
     </>
   );
