@@ -76,7 +76,23 @@ const Banner = () => {
         <SBannerWrapper>
           <SBannerOverlay />
           <SAvatarThumb>
-            <img src={GamePhoto1} alt="game avatar 1" loading="lazy" />
+            {isDesktop ? (
+              <img
+                src={GamePhoto1}
+                alt="game avatar 1"
+                loading="lazy"
+                width={120}
+                height={120}
+              />
+            ) : (
+              <img
+                src={GamePhoto1}
+                alt="game avatar 1"
+                loading="lazy"
+                width={89}
+                height={89}
+              />
+            )}
           </SAvatarThumb>
           {isDesktop ? (
             <SButtonBlock>
