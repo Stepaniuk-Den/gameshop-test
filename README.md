@@ -27,7 +27,7 @@
   <img src="./public/gameshop_test-footer.webp">
 
 Тут є також перемикач теми "light/dark" та Sidebar з лівої сторони екрану у десктопної версії сайту з посиланнями на соціальні мережі
-<img src="./public/Dashboard_pagination_search.webp">
+<img src="./public/gameshop_test-theme.webp">
 
 <h3 align="center">Mobile version</h3>
 Також існує мобільна версія сторінки.
